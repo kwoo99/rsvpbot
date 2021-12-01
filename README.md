@@ -18,4 +18,4 @@ The command to run the code is **python3 main.py**
 
 # Important!
 
-Please contact me for the bot_token. Until I can figure out how to properly upload it to github without Discord's security team reseting my bots token for doing so, I will need to give the token to you by message. 
+Please contact me for the bot_token. The code cannot work without it. Until I can figure out how to properly upload it to github without Discord's security team reseting my bots token for doing so, I will need to give the token to you by message. 
