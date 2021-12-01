@@ -1,5 +1,5 @@
 # RSVP Bot
-RSVP Bot is a simple discord bot developed using discord.py that handles rsvp over discord servers by utilizing message reaction and direct messaging.
+RSVP Bot is a simple discord bot developed using discord.py that handles rsvp over discord servers by utilizing message reaction and direct messaging. The aim of this discord bot is to create a invite bot that has functionality of reaching out and assuring that people can attend planned events without much effort on the event planner's side.
 
 
 # How to Contribute
