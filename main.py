@@ -1,4 +1,3 @@
-# main.py
 import os
 import discord
 from discord.ext import commands
@@ -28,10 +27,10 @@ async def create_event(ctx):
   msg_event_details = await bot.wait_for('message', check=lambda message: message.author == ctx.author)
   
   ctx.type = 'event'
-  msg_event_final = await ctx.send("{} has created the event: {}\nEvent Date:\n{}\nEvent Details:\n{}".format
+  msg_event_final = await ctx.send("|EVENT|\n{} has created the event:\n{}\nEvent Date:\n{}\nEvent Details:\n{}".format
   (ctx.author.name, msg_event_name.content, msg_event_date.content, msg_event_details.content))
   
-  await msg_event_final.edit(type = 'event')
+ # await msg_event_final.edit(type = 'event')
 
   print(msg_event_final.type)
   print(msg_event_final.id)
@@ -46,7 +45,7 @@ async def on_reaction_add(reaction, user):
   print(reaction.message.type)
   if(reaction.message.author == bot.user):
     print(reaction.message.id)
-    if reaction.message.type == 'event':
+    if '|EVENT|' in reaction.message.content:
       if check_emoji(reaction.emoji, reaction.message.reactions, '👍'):
         await channel.send(f'{user.name} has confirmed that they will participate in this event')
       elif check_emoji(reaction.emoji, reaction.message.reactions, '👎'):
